@@ -122,7 +122,7 @@ function credits(){
                })();
             }
             if (title2==null || title2==undefined || title2==""){
-                title2="DM Unbl0cker";
+                title2="CharUnblock";
                 document.cookie="title2="+title2+"; expires=Thu, 18 Dec 9013 12:00:00 UTC; path=/";
                 parent.document.title=title2;
             }
@@ -138,7 +138,7 @@ function credits(){
     var title2=get_cookie("title2");
     var favicon=get_cookie("favicon");
     if (favicon==null || favicon==undefined || favicon==""){
-        favicon="/img/logo.png";
+        favicon="favicon.ico";
         document.cookie="favicon="+favicon+"; expires=Thu, 18 Dec 9013 12:00:00 UTC; path=/";
         (function() {
            var link=document.querySelector("link[rel*='icon']") || document.createElement('link');
@@ -158,7 +158,7 @@ function credits(){
        })();
     }
     if (title2==null || title2==undefined || title2==""){
-        title2="DM Unbl0cker";
+        title2="CharUnblock";
         document.cookie="title2="+title2+"; expires=Thu, 18 Dec 9013 12:00:00 UTC; path=/";
         document.title=title2;
     }
@@ -169,7 +169,7 @@ function credits(){
    window.navigator.serviceWorker.register('./sw.js');
 
 if (favicon==null || favicon==undefined || favicon==""){
-        favicon="/img/logo.png";
+        favicon="favicon.ico";
         document.cookie="favicon="+favicon+"; expires=Thu, 18 Dec 9013 12:00:00 UTC; path=/";
         (function() {
            var link=document.querySelector("link[rel*='icon']") || document.createElement('link');
@@ -189,7 +189,7 @@ if (favicon==null || favicon==undefined || favicon==""){
        })();
     }
     if (title2==null || title2==undefined || title2==""){
-        title2="DM Unbl0cker";
+        title2="CharUnblock";
         document.cookie="title2="+title2+"; expires=Thu, 18 Dec 9013 12:00:00 UTC; path=/";
         document.title=title2;
     }
