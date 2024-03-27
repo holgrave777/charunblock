@@ -33,6 +33,7 @@ form.addEventListener("submit", async (event) => {
             document.body.appendChild(white);
 
             var loading = document.createElement('img');
+            loading.style.display = 'none';
             loading.style.cursor="pointer";
             loading.style.width = "125px";
             loading.style.height = "125px";
@@ -64,6 +65,7 @@ form.addEventListener("submit", async (event) => {
     
     
             var x = document.createElement('img');
+            x.style.display = 'none';
             x.style.cursor="pointer";
             x.style.position = "absolute";
             x.style.width = "50px";
@@ -80,6 +82,7 @@ form.addEventListener("submit", async (event) => {
 
 
             var open = document.createElement('img');
+            open.style.display = 'none';
             open.style.cursor="pointer";
             open.style.position = "absolute";
             open.style.width = "50px";
@@ -98,6 +101,7 @@ form.addEventListener("submit", async (event) => {
 
 
             var inpcont=document.createElement('div');
+            inpcont.style.display = 'none';
             inpcont.style.maxWidth="80%";
             inpcont.style.overflowX="scroll";
             inpcont.style.overflowY="hidden";
@@ -140,6 +144,7 @@ form.addEventListener("submit", async (event) => {
             inpcont.appendChild(inp);
   
             var dev = document.createElement('img');
+            dev.style.display = 'none';
             dev.style.cursor="pointer";
             dev.style.position = "absolute";
             dev.style.width = "50px";
