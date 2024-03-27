@@ -49,34 +49,6 @@
         z-index:100;
         height:100%;
     }
-    .loadimg{
-        position:absolute;
-        opacity:1;
-        display:block;
-        width:125px;
-        z-index:101;
-        height:125px;
-        top:50%;
-        left:50%;
-        transform:translate(-50%, -50%);
-    }
-    @keyframes fadeout{
-        0%{
-            opacity:1;
-            pointer-events: none;
-        }
-        100%{
-            opacity:0;
-            display:none;
-        }
-    }
-    .bg{
-    top: 0%;
-    left: 0%;
-    position: absolute;
-    width:100%;
-    height:100%;
-    }
     .iframe1{
     border: none;
     }
@@ -90,32 +62,6 @@
     }
     .creditstext{
     color: blue;
-  }
-    .searchbox{
-    width:47%;
-    height:7%;
-    color: #FFFFFF;
-    position: absolute;
-    left:26.5%;
-    top:50%;
-    }
-    .apps{
-    position: absolute;
-    height:100%;
-    width:70px;
-    height:70px;
-    right:90px;
-    top:1%;
-    opacity:1;
-    }
-    .chat{
-    position: absolute;
-    height:100%;
-    width:70px;
-    height:70px;
-    right:180px;
-    top:1%;
-    opacity:1;
     }
     .search{
     text-align: center;
@@ -143,125 +89,6 @@
     margin: auto;
     color: #FFFFFF;
     font-size: 1.2em;
-    }
-    .icons{
-    align: center;
-    text-align: center;
-    position: absolute;
-    width: 100%;
-    height: 70px;
-    bottom: 30px;
-    left: 0%;
-    }
-    .iconslabel{
-    align: center;
-    text-align: center;
-    position: absolute;
-    width: 100%;
-    height: 20px;
-    bottom: 5px;
-    left: 0%;
-    }
-    .github{
-    position: absolute;
-    width:70px;
-    height:70px;
-    right:40%;
-    opacity:1;
-    }
-    .labels{
-    width:70px;
-    height:20px;
-    color:white;
-    position:absolute;
-    top:calc(1% + 70px);
-    text-align:center;
-    }
-    #chatlabel{
-    right:180px;
-    }
-    #gameslabel{
-    right:1%;
-    }
-    #appslabel{
-    right:90px;
-    }
-    #settingslabel{
-    left:1%;
-    }
-
-    #discordlabel{
-    position:absolute;
-    top:0px;
-    width:150px;
-    left:calc(40% - 37.5px);
-    text-align:center;
-    }
-    #githublabel{
-    position:absolute;
-    width:150px;
-    text-align:center;
-    top:0px;
-    right:calc(40% - 37.5px);
-    }
-    #blanklabel{
-    position:absolute;
-    width:100px;
-    top:0px;
-    right:0px;
-    text-align:right;
-    }
-    .blank{
-    position: absolute;
-    height:100%;
-    width:70px;
-    height:70px;
-    right:0%;
-    opacity:1;
-    }
-    .settings{
-    position: absolute;
-    height:100%;
-    width:70px;
-    height:70px;
-    left:1%;
-    top:1%;
-    opacity:1;
-    }
-    .games{
-    position: absolute;
-    height:100%;
-    width:70px;
-    height:70px;
-    right:1%;
-    top:1%;
-    opacity:1;
-    }
-    .discord{
-    position: absolute;
-    height:100%;
-    width:70px;
-    height:58px;
-    opacity:1;
-    left:40%;
-    top:8%;
-    }
-    .x{
-    position: absolute;
-    width:70px;
-    height:70px;
-    top:0px;
-    right:0px;
-    }
-    .chat:hover,.apps:hover,.games:hover,.discord:hover,.github:hover,.settings:hover,.blank:hover{
-        border-radius:25px;
-        filter: blur(1px);
-        box-shadow: 0px 0px 109px 20px rgba(255,255,255,1);
-        background-color: rgb(230, 230, 230,0.4);
-    }
-    
-    .apps,.games,.settings,.blank,.github,.discord,.chat{
-        transition: border-radius 0.8s ease-out, filter 0.7s ease-out, box-shadow 0.7s ease-out, background-color 0.5s ease-out;
     }
 </style>
 <script>
@@ -295,7 +122,7 @@
                })();
             }
             if (title2==null || title2==undefined || title2==""){
-                title2="DM Unbl0cker";
+                title2="CharUnblock";
                 document.cookie="title2="+title2+"; expires=Thu, 18 Dec 9013 12:00:00 UTC; path=/";
                 parent.document.title=title2;
             }
@@ -398,7 +225,7 @@
        })();
     }
     if (title2==null || title2==undefined || title2==""){
-        title2="DM Unbl0cker";
+        title2="CharUnblock";
         document.cookie="title2="+title2+"; expires=Thu, 18 Dec 9013 12:00:00 UTC; path=/";
         document.title=title2;
     }
@@ -420,16 +247,5 @@ function isUrl(val = '') {
   searchInput.value = searchEngine || "https://www.google.com/search?q=%s";
 });
 
-    function fade(){
-        document.getElementById("loadimg").style.animation="linear 1.5s 1 running fadeout";
-        document.getElementById("loadimg").addEventListener("animationend", () => {
-            document.getElementById("black").style.animation="linear 1.5s 1 running fadeout";
-            document.getElementById("black").addEventListener("animationend", () => {
-                document.getElementById("black").remove();
-            });
-            document.getElementById("loadimg").remove();
-        });
-
     }
-    setTimeout(fade,1200);
 </script>
