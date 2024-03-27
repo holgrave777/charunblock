@@ -101,7 +101,6 @@ form.addEventListener("submit", async (event) => {
 
 
             var inpcont=document.createElement('div');
-            inpcont.style.display = 'none';
             inpcont.style.maxWidth="80%";
             inpcont.style.overflowX="scroll";
             inpcont.style.overflowY="hidden";
