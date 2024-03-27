@@ -1,7 +1,4 @@
-<p align="center"><img src="/img/logogif.gif" height="200px" width="200px">
-</p>
-
-<h1 align="center">DM unbl0cker</h1>
+<h1 align="center">CharUnblock</h1>
 
 <h4 align="center">Uses the Ultraviolet Proxy to browse the web freely.</h3>
 
