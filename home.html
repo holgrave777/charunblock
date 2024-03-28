@@ -8,23 +8,6 @@
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
-
-
-<script>
-    var link=document.querySelector("link[rel*='icon']") || document.createElement('link');
-    link.type='image/x-icon';
-    link.rel='shortcut icon';
-    link.href="https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://google.com&size=16";
-    document.title="Google";
-    document.getElementsByTagName('head')[0].appendChild(link);
-    
-    
-    function get_cookie(cookie_name) { const value = "; " + document.cookie; const parts = value.split("; " + cookie_name + "="); if (parts.length === 2) return parts.pop().split(";").shift(); } 
-    function blank(){
-      (function () {var url = document.URL; var urlObj = new window.URL(window.location.href); win = window.open(); win.document.body.style.margin = "0"; win.document.body.style.height = "100vh"; var iframe = win.document.createElement("iframe"); iframe.style.border = "none"; iframe.style.width = "100%"; iframe.style.height = "100%"; iframe.style.margin = "0"; iframe.referrerpolicy = "no-referrer"; iframe.allow = "fullscreen"; iframe.src = url.toString(); win.document.body.appendChild(iframe);window.location.href="https://google.com";})();
-    }
-</script>
 <br>
 <br>
 <br>
@@ -83,90 +66,8 @@
     }
 </style>
 <script>
-    
-    if (get_cookie("autoblank")=="on"){
-        if (window.top !== window) {
-            var title2=get_cookie("title2");
-            var favicon=get_cookie("favicon");
-
-            if (favicon==null || favicon==undefined || favicon==""){
-                favicon="favicon.ico";
-                document.cookie="favicon="+favicon+"; expires=Thu, 18 Dec 9013 12:00:00 UTC; path=/";
-                (function() {
-                   var link=parent.document.createElement('link');
-                   link.type='image/x-icon';
-                   link.rel='shortcut icon';
-                   link.href=favicon;
-                   parent.document.getElementsByTagName('head')[0].appendChild(link);
-               })();
-            }
-            else{
-                (function() {
-                   var link=parent.document.createElement('link');
-                   link.type='image/x-icon';
-                   link.rel='shortcut icon';
-                   link.href=favicon;
-                   parent.document.getElementsByTagName('head')[0].appendChild(link);
-               })();
-            }
-            if (title2==null || title2==undefined || title2==""){
-                title2="CharUnblock";
-                document.cookie="title2="+title2+"; expires=Thu, 18 Dec 9013 12:00:00 UTC; path=/";
-                parent.document.title=title2;
-            }
-            else{
-                parent.document.title=title2;
-            }
-        }
-        else{
-            blank();
-        }
-    }
-    
-    var title2=get_cookie("title2");
-    var favicon=get_cookie("favicon");
-    
-    var fontsize1=2560/screen.width*18.5;
-    var fontsize2=2560/screen.width*7.5;
-    
-    title1.style.fontSize = fontsize1+"px";
-    search.style.fontSize = fontsize2+"px";
-    
-    if (favicon==null || favicon==undefined || favicon==""){
-        favicon="/img/logo.png";
-        document.cookie="favicon="+favicon+"; expires=Thu, 18 Dec 9013 12:00:00 UTC; path=/";
-        (function() {
-           var link=document.querySelector("link[rel*='icon']") || document.createElement('link');
-           link.type='image/x-icon';
-           link.rel='shortcut icon';
-           link.href=favicon;
-           document.getElementsByTagName('head')[0].appendChild(link);
-       })();
-    }
-    else{
-        (function() {
-           var link=document.querySelector("link[rel*='icon']") || document.createElement('link');
-           link.type='image/x-icon';
-           link.rel='shortcut icon';
-           link.href=favicon;
-           document.getElementsByTagName('head')[0].appendChild(link);
-       })();
-    }
-    if (title2==null || title2==undefined || title2==""){
-        title2="CharUnblock";
-        document.cookie="title2="+title2+"; expires=Thu, 18 Dec 9013 12:00:00 UTC; path=/";
-        document.title=title2;
-    }
-    else{
-        document.title=title2;
-    }
-</script>
-<script>
     window.navigator.serviceWorker.register('./sw.js');
-    
-    var title2=get_cookie("title2");
     var browsertype=get_cookie("browser3");
-    var favicon=get_cookie("favicon");
     
     var fontsize1=2560/screen.width*18;
     var fontsize2=2560/screen.width*7.5;
@@ -191,35 +92,6 @@
         }
         document.cookie="browser3="+browsertype+"; expires=Thu, 18 Dec 9013 12:00:00 UTC; path=/";
     }
-        
-    if (favicon==null || favicon==undefined || favicon==""){
-        favicon="/img/logo.png";
-        document.cookie="favicon="+favicon+"; expires=Thu, 18 Dec 9013 12:00:00 UTC; path=/";
-        (function() {
-           var link=document.querySelector("link[rel*='icon']") || document.createElement('link');
-           link.type='image/x-icon';
-           link.rel='shortcut icon';
-           link.href=favicon;
-           document.getElementsByTagName('head')[0].appendChild(link);
-       })();
-    }
-    else{
-        (function() {
-           var link=document.querySelector("link[rel*='icon']") || document.createElement('link');
-           link.type='image/x-icon';
-           link.rel='shortcut icon';
-           link.href=favicon;
-           document.getElementsByTagName('head')[0].appendChild(link);
-       })();
-    }
-    if (title2==null || title2==undefined || title2==""){
-        title2="CharUnblock";
-        document.cookie="title2="+title2+"; expires=Thu, 18 Dec 9013 12:00:00 UTC; path=/";
-        document.title=title2;
-    }
-    else{
-        document.title=title2;
-    }
 </script>
 
 <script>
@@ -234,21 +106,6 @@ function isUrl(val = '') {
        
   searchInput.value = searchEngine || "https://www.google.com/search?q=%s";
 });
-
-    }
-function aboutblank() {
-            var url = window.location.href;
-            var win = window.open();
-            win.document.body.style.margin = '0';
-            win.document.body.style.height = '100vh';
-            var embed = win.document.createElement('embed');
-            embed.style.border = 'none';
-            embed.style.width = '100%';
-            embed.style.height = '100%';
-            embed.style.margin = '0';
-            embed.src = url;
-            win.document.body.appendChild(embed);
-        }
 </script>
 </body>
 <div style="align-items: center; background-color: #4d4d4d; width:100%; height: 50px; bottom: 0px; position: fixed; text-decoration: none; color: white;">
