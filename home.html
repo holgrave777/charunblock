@@ -13,13 +13,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
 
 <script>
-    function testframe () {
-    try {
-        return window.self !== window.top;
-    } catch (e) {
-        return true;
-    }
-    }
     var link=document.querySelector("link[rel*='icon']") || document.createElement('link');
     link.type='image/x-icon';
     link.rel='shortcut icon';
