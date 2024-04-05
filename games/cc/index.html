@@ -1,0 +1,14 @@
+<script>
+function encode(str) {
+    return encodeURIComponent(
+                str
+                    .toString()
+                    .split('')
+                    .map((char, ind) =>
+                        ind % 2 ? String.fromCharCode(char.charCodeAt() ^ 2) : char
+                    )
+                    .join('')
+            );
+}
+document.write('<iframe src="' + window.location.protocol + '//' + window.location.hostname + '/service/' + encode('http://orteil.dashnet.org/cookieclicker/') + '" width="100%" height="100%"></iframe>')
+</script>
