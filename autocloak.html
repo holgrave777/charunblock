@@ -1,6 +1,7 @@
 <script>    
  var url = window.location.protocol + '//' + window.location.hostname + '/home.html/';
  var win = window.open();
+ win.target = '_self';
  win.document.body.style.margin = '0'; 
  win.document.body.style.height = '100vh'; 
  var embed = win.document.createElement('iframe'); 
