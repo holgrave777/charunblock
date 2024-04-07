@@ -2,7 +2,7 @@
   "version": 2,
   "devCommand": "node bare.js",
   "builds": [{
-      "src": "index.js",
+      "src": "bare.js",
       "use": "@vercel/node"
   }],
   "routes": [{
