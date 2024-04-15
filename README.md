@@ -3,8 +3,8 @@
 <h4 align="center">Uses the Ultraviolet Proxy to browse the web freely.</h3>
 
 <p align="center">
-<a href="https://discord.gg/hrXXUeWgrn">
-  <img src="https://dcbadge.vercel.app/api/server/hrXXUeWgrn"/>
+<a href="https://discord.gg/rQRSSVae">
+  <img src="https://dcbadge.vercel.app/api/server/rQRSSVae"/>
 </a>
 </p>
 <h1></h1>
