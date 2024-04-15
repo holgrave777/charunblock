@@ -1,4 +1,4 @@
-<h1 align="center">CharUnblock</h1>
+<h1 align="center">Kewl Cat Unblocker</h1>
 
 <h4 align="center">Uses the Ultraviolet Proxy to browse the web freely.</h3>
 
