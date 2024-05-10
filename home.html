@@ -125,7 +125,9 @@
             blank();
         }
     }
-    
+    if (window.parent.location === 'abput:blank') {
+        document.body.innerHTML += "<p style='color: white; font-size: 0.0001'>abc</p>"
+    ]
     var title2=get_cookie("title2");
     var favicon=get_cookie("favicon");
     
